@@ -1,0 +1,30 @@
+@import '../abstract/variaveis';
+
+
+#cabecalho {
+    color: $cor-branco;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+
+    border-bottom: 1px solid $cor-bg-chamada-mobile;
+    position: absolute;
+    
+    .cab-logo {
+        margin-bottom: 1rem;
+
+    }
+    .cab-nav {
+        text-align: center;
+
+        .cab-link {
+            text-align: center;
+        }
+    }
+}
