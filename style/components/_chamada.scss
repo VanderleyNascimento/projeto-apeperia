@@ -1,5 +1,10 @@
 @import '../abstract/variaveis';
 
+/* _________________________ */
+/* ________ chamada ________ */
+/* _________________________ */
+
+
 #chamada {
     display: flex;
     flex-direction: column;
@@ -8,13 +13,14 @@
     color: $cor-branco ;
     text-align: center;
     
-    background-color: #00161C;
+    background-color: $cor-bg-chamada-mobile;
 
     padding-top: 12.25rem;
     padding-bottom: 2.5rem;
 
     .ch-titulo {
         font: $fonte-mont;
+        font-size: 2rem;
         font-weight: 700;
         text-transform: uppercase;
     
@@ -27,5 +33,7 @@
     
         margin: 0 auto 2.5rem;
     }
-    
+    .ch-botao {
+        width: 100%;
+    }
 }
