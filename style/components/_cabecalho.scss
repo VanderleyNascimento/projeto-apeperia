@@ -1,4 +1,7 @@
 @import '../abstract/variaveis';
+/* _________________________ */
+/* _______ cabecalho _______ */
+/* _________________________ */
 
 
 #cabecalho {
@@ -24,7 +27,13 @@
         text-align: center;
 
         .cab-link {
-            text-align: center;
+            font-size: 1.1rem;
+
+            display: inline-block;
+        
+            margin-right: .7rem;
+            margin-bottom: 1.25rem;
+            margin-left: .7rem;
         }
     }
 }
