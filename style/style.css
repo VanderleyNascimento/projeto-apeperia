@@ -57,10 +57,26 @@ html, body {
   font-family: "Open Sans", sans-serif;
 }
 
+.container {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.botao {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+}
+
 /* _________________________ */
 /* _______ cabecalho _______ */
 /* _________________________ */
-#cabecalho {
+.cabecalho {
   color: #FFF;
   width: 100%;
   box-sizing: border-box;
@@ -72,13 +88,13 @@ html, body {
   border-bottom: 1px solid #00161C;
   position: absolute;
 }
-#cabecalho .cab-logo {
+.cabecalho .cab-logo {
   margin-bottom: 1rem;
 }
-#cabecalho .cab-nav {
+.cabecalho .cab-nav {
   text-align: center;
 }
-#cabecalho .cab-nav .cab-link {
+.cabecalho .cab-nav .cab-link {
   font-size: 1.1rem;
   display: inline-block;
   margin-right: 0.7rem;
@@ -89,7 +105,7 @@ html, body {
 /* _________________________ */
 /* ________ chamada ________ */
 /* _________________________ */
-#chamada {
+.chamada {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,18 +115,18 @@ html, body {
   padding-top: 12.25rem;
   padding-bottom: 2.5rem;
 }
-#chamada .ch-titulo {
+.chamada .ch-titulo {
   font: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
-#chamada .ch-texto {
+.chamada .ch-texto {
   font-size: 1.25rem;
   line-height: normal;
   margin: 0 auto 2.5rem;
 }
-#chamada .ch-botao {
+.chamada .ch-botao {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
