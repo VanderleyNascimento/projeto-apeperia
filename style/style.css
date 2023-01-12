@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,7 +75,7 @@ html, body {
 }
 
 /* _________________________ */
-/* _______ cabecalho _______ */
+/* _______ cabeçalho _______ */
 /* _________________________ */
 .cabecalho {
   color: #FFF;
@@ -129,4 +130,33 @@ html, body {
 }
 .chamada .ch-botao {
   width: 100%;
+}
+
+/* _________________________ */
+/* _______ destaques _______ */
+/* _________________________ */
+.destaques {
+  background-color: #DFE3E5;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+.destaques .destaque__tutulo {
+  color: #4F4C4C;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.destaques .destaque__painel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.destaques .destaque__painel .destaque__painel-imagem {
+  width: 100%;
+  box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.1254901961);
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
