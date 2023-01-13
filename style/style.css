@@ -157,6 +157,66 @@ html, body {
 }
 .destaques .destaque__painel .destaque__painel-imagem {
   width: 100%;
+  max-width: 600px;
   box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.1254901961);
   margin-bottom: 0.5rem;
+}
+
+/* _________________________ */
+/* _______Diferenciais______ */
+/* _________________________ */
+.diferenciais {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.diferenciais .diferenciais__lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.diferenciais .diferenciais__lista .diferenciais__item {
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 2rem 0 2rem 5rem;
+}
+.diferenciais .diferenciais__lista .diferenciais__item .item__titulo {
+  color: #4F4C4C;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.diferenciais .diferenciais__lista .diferenciais__item .item__texto {
+  line-height: normal;
+}
+
+/* _________________________ */
+/* __________Sobre__________ */
+/* _________________________ */
+.sobre {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.sobre .sobre__titulo {
+  color: #4F4C4C;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.sobre .sobre__texto {
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+.sobre .sobre__texto .sobre__texto--destaque {
+  color: #4F4C4C;
+  font-weight: 700;
+}
+.sobre .sobre__plataformas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+@import '../abstract/variaveis';
+
+/* _________________________ */
+/* __________Sobre__________ */
+/* _________________________ */
+
+.sobre {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .sobre__titulo {
+        color: $cor-cinza-escuro;
+        font-weight: 700;
+        font-size: 1.5rem;
+        font-family: $fonte-mont;
+        text-transform: uppercase;
+        text-align: center;
+    
+        margin-bottom: 1.25rem;
+    }
+
+    .sobre__texto {
+        line-height: normal;
+    
+        margin-bottom: 1rem;
+
+        .sobre__texto--destaque {
+            color: $cor-cinza-escuro;
+            font-weight: 700;
+        }
+    }
+
+    .sobre__plataformas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+        margin-bottom: 1rem;
+    }
+}
