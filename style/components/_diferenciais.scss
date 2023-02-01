@@ -20,6 +20,20 @@
         
             padding: 2rem 0 2rem 5rem;
 
+            .diferenciais__item--tempo {
+
+               background-image: url(../../img/icone-relogio.png);
+            }
+            .diferenciais__item--foco {
+
+                background-image: url(../../img/icone-dinheiro.png);
+            }
+
+            .diferenciais__item--especialista {
+                
+                background-image: url(../../img/icone-quimica.png);
+            }
+
             .item__titulo {
                 color: $cor-cinza-escuro ;
                 font-weight: 700;
