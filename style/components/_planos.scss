@@ -1,4 +1,5 @@
 @import '../abstract/variaveis';
+@import '../abstract/responsive';
 
 .planos {
     background-color:$cor-cinza-claro;
@@ -20,8 +21,12 @@
 
 .planos__cartoes {
     display: flex;
-    flex-direction:inherit;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+ 
 
     .cartao {
         display: flex;
@@ -57,7 +62,7 @@
 
 
     }
-}
+
 
 .cartao__preco {
     font-weight: 700;
