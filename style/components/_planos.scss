@@ -20,7 +20,7 @@
 
 .planos__cartoes {
     display: flex;
-    flex-direction: column;
+    flex-direction:inherit;
     align-items: center;
 
     .cartao {
