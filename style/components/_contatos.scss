@@ -1,3 +1,5 @@
+@import '../abstract/variaveis';
+
 .contato {
     display: flex;
     flex-direction: column;
@@ -9,10 +11,10 @@
     padding-bottom: 2rem;
 
     .contato__titulo {
-        color: var(--cinza-escuro);
+        color: $cor-cinza-escuro;
         font-weight: 700;
         font-size: 1.5rem;
-        font-family: var(--montserrat);
+        font-family: $fonte-mont;
         text-transform: uppercase;
         text-align: center;
     
@@ -20,9 +22,9 @@
     }
 
     .contato__botao {
-        color: var(--cinza-escuro);
+        color: $cor-cinza-escuro;
     
-        border-color: var(--cinza-escuro);
+        border-color: $cor-cinza-escuro;
     
         margin-top: 1rem;
     }
