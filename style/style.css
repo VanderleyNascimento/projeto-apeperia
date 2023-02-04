@@ -428,6 +428,7 @@ html, body {
   color: #FFF;
   text-align: center;
   line-height: 3;
+  cursor: pointer;
 }
 
 .rodape__link {
