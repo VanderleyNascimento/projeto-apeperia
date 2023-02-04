@@ -19,20 +19,10 @@
             box-sizing: border-box;
         
             padding: 2rem 0 2rem 5rem;
+            background-repeat: no-repeat;
+            background-position: top 1.25rem left 2.5rem;
 
-            .diferenciais__item--tempo {
-
-               background-image: url(../../img/icone-relogio.png);
-            }
-            .diferenciais__item--foco {
-
-                background-image: url(../../img/icone-dinheiro.png);
-            }
-
-            .diferenciais__item--especialista {
-                
-                background-image: url(../../img/icone-quimica.png);
-            }
+           
 
             .item__titulo {
                 color: $cor-cinza-escuro ;
@@ -47,5 +37,19 @@
                 line-height: normal;
             }
         }
+
+        .diferenciais__item--tempo {
+
+            background-image: url(../../img/icone-relogio.png);
+         }
+         .diferenciais__item--foco {
+
+             background-image: url(../img/icone-dinheiro.png);
+         }
+
+         .diferenciais__item--especialistas {
+             
+             background-image: url(../img/icone-quimica.png);
+         }
     }
 }

@@ -1,4 +1,31 @@
-@media only screen and (min-width: 1214px) {
+@media screen and (min-width: 1024px) {
+
+    .cabecalho {
+       flex-direction: row;
+       justify-content: space-evenly;
+       border: none;
+    
+   }
+
+   .chamada {
+    background-image: url(../../img/bg-intro.jpg);
+    background-size: cover;
+    padding-top: 8.25rem;
+
+    .ch-titulo {
+        font-size: 3.25rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .diferenciais {
+        background-color: $cor-cinza-claro;
+        .diferenciais__lista {
+            justify-content: space-around;
+        }
+    }
+
+   }
 
     .planos__cartoes {
         display: flex;
@@ -8,6 +35,12 @@
     }
     }
 
+    @media screen and (max-width: 768px) {
+        .chamada__texto {
+            max-width: 600px;
+        }
+
+    }
 
 
 
@@ -15,6 +48,3 @@
 
 }
 
-@media only screen and (max-width: 500px) {
-
-}
