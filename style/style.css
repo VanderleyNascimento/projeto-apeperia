@@ -253,10 +253,18 @@ html, body {
   margin-bottom: 1rem;
 }
 
+.sobre__imagem {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
+  .container {
+    padding-left: calc((100% - 940px) / 2);
+    padding-right: calc((100% - 940px) / 2);
+  }
   .cabecalho {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: none;
   }
   .chamada {
@@ -274,16 +282,52 @@ html, body {
   .chamada .diferenciais .diferenciais__lista {
     justify-content: space-around;
   }
-  .planos__cartoes {
+  .sobre {
+    display: flex;
+  }
+  .sobre .sobre__conteudo {
+    margin-right: 3rem;
+  }
+  .sobre .sobre__conteudo .sobre__titulo {
+    text-align: left;
+  }
+  .sobre .sobre__conteudo .sobre__texto--divisao {
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 1.5rem;
+  }
+  .sobre .sobre__imagem {
+    display: block;
+  }
+  .sobre .planos__cartoes {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: flex-end;
+    justify-content: space-between;
   }
-}
-@media screen and (max-width: 768px) {
-  .chamada__texto {
-    max-width: 600px;
+  .sobre .planos__cartoes .cartao {
+    max-width: 300px;
+  }
+  .sobre .institucional__conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .sobre .institucional__conteudo .institucional__video {
+    align-self: flex-end;
+    width: 375px;
+  }
+  .sobre .institucional__conteudo .institucional__contato-email {
+    display: block;
+  }
+  .sobre .rodape {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .sobre .rodape .rodape__navegacao {
+    text-align: left;
+    min-width: 600px;
   }
 }
 .planos {
@@ -484,9 +528,13 @@ html, body {
 }
 
 @media screen and (min-width: 1024px) {
+  .container {
+    padding-left: calc((100% - 940px) / 2);
+    padding-right: calc((100% - 940px) / 2);
+  }
   .cabecalho {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: none;
   }
   .chamada {
@@ -504,15 +552,51 @@ html, body {
   .chamada .diferenciais .diferenciais__lista {
     justify-content: space-around;
   }
-  .planos__cartoes {
+  .sobre {
+    display: flex;
+  }
+  .sobre .sobre__conteudo {
+    margin-right: 3rem;
+  }
+  .sobre .sobre__conteudo .sobre__titulo {
+    text-align: left;
+  }
+  .sobre .sobre__conteudo .sobre__texto--divisao {
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 1.5rem;
+  }
+  .sobre .sobre__imagem {
+    display: block;
+  }
+  .sobre .planos__cartoes {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: flex-end;
+    justify-content: space-between;
   }
-}
-@media screen and (max-width: 768px) {
-  .chamada__texto {
-    max-width: 600px;
+  .sobre .planos__cartoes .cartao {
+    max-width: 300px;
+  }
+  .sobre .institucional__conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .sobre .institucional__conteudo .institucional__video {
+    align-self: flex-end;
+    width: 375px;
+  }
+  .sobre .institucional__conteudo .institucional__contato-email {
+    display: block;
+  }
+  .sobre .rodape {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .sobre .rodape .rodape__navegacao {
+    text-align: left;
+    min-width: 600px;
   }
 }/*# sourceMappingURL=style.css.map */
