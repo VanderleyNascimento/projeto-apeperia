@@ -139,6 +139,7 @@ html, body {
   background-color: #DFE3E5;
   padding-top: 2.5rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 .destaques .destaques__titulo {
   color: #4F4C4C;
@@ -155,6 +156,13 @@ html, body {
   align-items: center;
   margin-bottom: 2rem;
 }
+.destaques .destaque__painel:hover {
+  transform: scale(1.05);
+}
+.destaques .destaque__painel img {
+  max-width: 100%;
+  border-radius: 5px;
+}
 .destaques .destaque__painel .destaque__painel-imagem {
   width: 100vw;
   max-width: 600px;
@@ -166,19 +174,25 @@ html, body {
   font-size: 1.2rem;
   line-height: normal;
 }
-
-.destaque__botao {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #B72E2E;
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 2.5rem;
-  color: #B72E2E;
-  border-color: #B72E2E;
-  margin: 0 auto;
+.destaques .destaque__botao {
+  /* Propriedades para transformar em botão */
+  display: inline-block; /* Use inline-block para que o botão possa ser centralizado */
+  align-items: center; /* Alinhar itens verticalmente no centro */
+  padding: 10px 20px; /* Adicionar padding interno */
+  border: none; /* Remover borda padrão */
+  border-radius: 5px; /* Arredondar os cantos */
+  background-color: #007bff; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branco */
+  font-weight: bold; /* Tornar o texto em negrito */
+  cursor: pointer; /* Indicar que é um elemento clicável */
+  transition: background-color 0.3s; /* Efeito de transição suave */
+  /* Estilos opcionais */
+  text-decoration: none; /* Remover sublinhado do texto */
+  text-align: center; /* Alinhar o texto no centro */
+  font-size: 1rem; /* Tamanho da fonte */
+}
+.destaques .destaque__botao:hover {
+  background-color: #0056b3; /* Cor de fundo azul escuro no hover */
 }
 
 /* _________________________ */
@@ -267,6 +281,17 @@ html, body {
     justify-content: space-between;
     border: none;
   }
+}
+@media screen and (min-width: 1024px) and (min-width: 1024px) {
+  .container {
+    padding-left: calc((100% - 940px) / 2);
+    padding-right: calc((100% - 940px) / 2);
+  }
+  .cabecalho {
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+  }
   .chamada {
     background-image: url(../../img/bg-intro.jpg);
     background-size: cover;
@@ -281,6 +306,10 @@ html, body {
   }
   .chamada .diferenciais .diferenciais__lista {
     justify-content: space-around;
+  }
+  .planos__cartoes {
+    flex-direction: row; /* Mudar para layout em linha */
+    justify-content: space-between; /* Distribuir os cartões com espaço entre eles */
   }
   .sobre {
     display: flex;
@@ -301,31 +330,33 @@ html, body {
   .sobre .planos__cartoes {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
+    width: 100%;
   }
   .sobre .planos__cartoes .cartao {
-    max-width: 300px;
+    max-width: 30%;
+    margin-bottom: 0;
   }
-  .sobre .institucional__conteudo {
+  .institucional__conteudo {
     width: 100%;
     display: flex;
     justify-content: space-between;
     text-align: left;
   }
-  .sobre .institucional__conteudo .institucional__video {
+  .institucional__video {
     align-self: flex-end;
     width: 375px;
   }
-  .sobre .institucional__conteudo .institucional__contato-email {
+  .institucional__contato-email {
     display: block;
   }
-  .sobre .rodape {
+  .rodape {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .sobre .rodape .rodape__navegacao {
+  .rodape__navegacao {
     text-align: left;
     min-width: 600px;
   }
@@ -537,6 +568,17 @@ html, body {
     justify-content: space-between;
     border: none;
   }
+}
+@media screen and (min-width: 1024px) and (min-width: 1024px) {
+  .container {
+    padding-left: calc((100% - 940px) / 2);
+    padding-right: calc((100% - 940px) / 2);
+  }
+  .cabecalho {
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+  }
   .chamada {
     background-image: url(../../img/bg-intro.jpg);
     background-size: cover;
@@ -551,6 +593,10 @@ html, body {
   }
   .chamada .diferenciais .diferenciais__lista {
     justify-content: space-around;
+  }
+  .planos__cartoes {
+    flex-direction: row; /* Mudar para layout em linha */
+    justify-content: space-between; /* Distribuir os cartões com espaço entre eles */
   }
   .sobre {
     display: flex;
@@ -571,31 +617,33 @@ html, body {
   .sobre .planos__cartoes {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
+    width: 100%;
   }
   .sobre .planos__cartoes .cartao {
-    max-width: 300px;
+    max-width: 30%;
+    margin-bottom: 0;
   }
-  .sobre .institucional__conteudo {
+  .institucional__conteudo {
     width: 100%;
     display: flex;
     justify-content: space-between;
     text-align: left;
   }
-  .sobre .institucional__conteudo .institucional__video {
+  .institucional__video {
     align-self: flex-end;
     width: 375px;
   }
-  .sobre .institucional__conteudo .institucional__contato-email {
+  .institucional__contato-email {
     display: block;
   }
-  .sobre .rodape {
+  .rodape {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .sobre .rodape .rodape__navegacao {
+  .rodape__navegacao {
     text-align: left;
     min-width: 600px;
   }

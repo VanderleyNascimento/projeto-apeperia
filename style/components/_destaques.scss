@@ -9,6 +9,7 @@
     background-color: $cor-azul-claro;
     padding-top: 2.5rem;
     padding-bottom: 2rem;
+    text-align: center;
 
    
 
@@ -29,6 +30,16 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 2rem;
+
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
        
 
         .destaque__painel-imagem {
@@ -53,30 +64,27 @@
         
     }
 
-   
-}
-.destaque__botao {
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  
-    color: $cor-vermelho-forte ;
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 2.5rem;
-   
-    color: $cor-vermelho-forte;
-
-    border-color: $cor-vermelho-forte;
-
-    margin: 0 auto;
+    .destaque__botao {
+        /* Propriedades para transformar em botão */
+      display: inline-block; /* Use inline-block para que o botão possa ser centralizado */
+      align-items: center; /* Alinhar itens verticalmente no centro */
+      padding: 10px 20px; /* Adicionar padding interno */
+      border: none; /* Remover borda padrão */
+      border-radius: 5px; /* Arredondar os cantos */
+      background-color: #007bff; /* Cor de fundo azul */
+      color: #fff; /* Cor do texto branco */
+      font-weight: bold; /* Tornar o texto em negrito */
+      cursor: pointer; /* Indicar que é um elemento clicável */
+      transition: background-color 0.3s; /* Efeito de transição suave */
     
-
-   
-
+      /* Estilos opcionais */
+      text-decoration: none; /* Remover sublinhado do texto */
+      text-align: center; /* Alinhar o texto no centro */
+      font-size: 1rem; /* Tamanho da fonte */
+    }
     
-
+    .destaque__botao:hover {
+      background-color: #0056b3; /* Cor de fundo azul escuro no hover */
+    }
+    
 }
-       
