@@ -1,8 +1,13 @@
 @media screen and (min-width: 1024px) {
 
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+
     .cabecalho {
        flex-direction: row;
-       justify-content: space-evenly;
+       justify-content: space-between;
        border: none;
     
    }
@@ -10,6 +15,7 @@
    .chamada {
     background-image: url(../../img/bg-intro.jpg);
     background-size: cover;
+
     padding-top: 8.25rem;
 
     .ch-titulo {
@@ -20,31 +26,87 @@
 
     .diferenciais {
         background-color: $cor-cinza-claro;
+
         .diferenciais__lista {
             justify-content: space-around;
         }
     }
-
    }
+    .sobre {
+        display: flex;
+
+        .sobre__conteudo {
+            margin-right: 3rem;
+
+              .sobre__titulo {
+                 text-align: left;
+                }
+
+
+                .sobre__texto--divisao {
+                    border-bottom: 1px solid $cor-cinza-medio;
+            
+                    padding-bottom: 1.5rem;
+                }
+        }
+
+
+        .sobre__imagem {
+            display: block;
+        }
+    
+    
 
     .planos__cartoes {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+        align-items: flex-end;
+        justify-content: space-between;
+          .cartao {
+            max-width: 300px;
+            }
     }
 
-    @media screen and (max-width: 768px) {
-        .chamada__texto {
-            max-width: 600px;
+    .institucional__conteudo {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+        text-align: left;
+
+       
+
+        .institucional__video {
+             align-self: flex-end;
+
+             width: 375px;
+
+             }
+        .institucional__contato-email {
+        display: block;
+         }
+
+
+    }
+
+  
+
+
+    .rodape {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .rodape__navegacao {
+            text-align: left;
+    
+            min-width: 600px;
         }
-
     }
 
 
 
-@media only screen and (max-width: 1214px) and (min-width: 1000px) {
-
+   
 }
-
+}
