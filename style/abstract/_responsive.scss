@@ -1,112 +1,92 @@
 @media screen and (min-width: 1024px) {
 
     .container {
-        padding-left: calc((100% - 940px)/2);
+        padding-left: calc((100% - 940px)/2); /* Cálculo do padding lateral centralizado */
         padding-right: calc((100% - 940px)/2);
     }
 
-    .cabecalho {
+    .cabecalho { /* Cabeçalho flexivel em linha e justificado */
        flex-direction: row;
        justify-content: space-between;
-       border: none;
-    
+       border: none; /* Remove borda em telas maiores */
    }
 
-   .chamada {
-    background-image: url(../../img/bg-intro.jpg);
+   .chamada { /* Estilos da seção de chamada */
+    background-image: url(../../img/bg-intro.jpg); 
     background-size: cover;
-
     padding-top: 8.25rem;
 
-    .ch-titulo {
+    .ch-titulo { /* Título da chamada */
         font-size: 3.25rem;
         margin-bottom: 2rem;
-
     }
+   }
 
-    .diferenciais {
+    .diferenciais { /* Estilos da seção de diferenciais */
         background-color: $cor-cinza-claro;
 
         .diferenciais__lista {
-            justify-content: space-around;
+            justify-content: space-around; /* Distribui itens uniformemente */
         }
     }
-   }
-    .sobre {
+
+    .sobre { /* Estilos da seção "sobre" */
         display: flex;
 
         .sobre__conteudo {
             margin-right: 3rem;
 
-              .sobre__titulo {
-                 text-align: left;
-                }
+            .sobre__titulo {
+                text-align: left;
+            }
 
-
-                .sobre__texto--divisao {
-                    border-bottom: 1px solid $cor-cinza-medio;
-            
-                    padding-bottom: 1.5rem;
-                }
+            .sobre__texto--divisao {
+                border-bottom: 1px solid $cor-cinza-medio; /* Divisão visual com borda */
+                padding-bottom: 1.5rem;
+            }
         }
 
-
-        .sobre__imagem {
+        .sobre__imagem { /* Exibe a imagem em telas maiores */
             display: block;
         }
-    
+    }
     
 
-    .planos__cartoes {
+    .planos__cartoes { /* Estilos dos cartões de planos */
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
-          .cartao {
-            max-width: 300px;
-            }
+
+        .cartao {
+            max-width: 300px; /* Largura máxima de cada cartão */
+        }
     }
 
-    .institucional__conteudo {
+    .institucional__conteudo { /* Estilos do conteúdo institucional */
         width: 100%;
-
         display: flex;
         justify-content: space-between;
-
         text-align: left;
 
-       
-
         .institucional__video {
-             align-self: flex-end;
+            align-self: flex-end;
+            width: 375px;
+        }
 
-             width: 375px;
-
-             }
-        .institucional__contato-email {
-        display: block;
-         }
-
-
+        .institucional__contato-email { /* Exibe o email em telas maiores */
+            display: block;
+        }
     }
 
-  
-
-
-    .rodape {
+    .rodape { /* Estilos do rodapé */
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Permite quebra de linha se necessário */
         justify-content: space-between;
 
         .rodape__navegacao {
             text-align: left;
-    
-            min-width: 600px;
+            min-width: 600px; /* Largura mínima da navegação */
         }
     }
-
-
-
-   
-}
 }
